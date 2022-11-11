@@ -13,81 +13,76 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Content/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Content/favicon-16x16.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../common.blocks/bundles/index.css">
+
     <!--    <link href="../Helping/outline-prototype-label.css" rel="stylesheet">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
-<body>
+<body class="body">
 <header class="header">
     <script href="../Helping/outline-control.js" rel="script"></script>
-    <!------------------------------------------------------------------------------------------->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
-    <section class="site-info header__site-info">
-        <div class="site-info__logo">
-            <a href="index.html">
-                <img class="" width="110" src="../Content/Logo.png" alt="Logo">
-            </a>
-        </div>
+    <section class="site-info header__item">
+        <a class="site-info__logo" href="index.html"></a>
 
-        <div class="site-info__title">
-            <h1 class="site-info__title_bold">Ckyku.net</h1>
-        </div>
+
+        <div class="site-info__title">Ckyku.net</div>
+
 
         <div class="site-info__slogan">
             Место, где можно узнать чем можно заняться и отказаться от скуки и лени
         </div>
     </section>
 
-    <section class="header__navbar">
-        <nav class="navbar">
-
-            <div class="menu navbar__item">
-
-                <a class="navbar__link" href="index.html">
-                    <button type="button" class="button menu__item menu-item_type_active">
-                        Главная страница
-                    </button>
-                </a>
-
-                <a class="navbar__link" href="Activities.html">
-                    <button type="button" class="button menu__item menu-item_type_common">
-                        Все активности
-                    </button>
-                </a>
-
-                <a class="navbar__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                   target="_/">
-                    <button type="button" class="button menu__item menu-item_type_common">
-                        Не нажимать
-                    </button>
-                </a>
-
-
-                <a class="navbar__link" href="Meme.html">
-                    <button type="button" class="button menu__item menu-item_type_common">
-                        ASCII графика
-                    </button>
-                </a>
-
-                <a class="navbar__link" href="#">
-                    <button type="button" class="button menu__item menu-item_type_disabled">
-                        Будущие функции и страницы
-                    </button>
-                </a>
-
-                <a class="navbar__link" href="#">
-                    <button type="button" class="button menu__item menu-item_type_invisible">
-                        Будущие функции и страницы
-                    </button>
-                </a>
-
-            </div>
-        </nav>
-    </section>
-
+<!--    <section class="header__item"></section>-->
 </header>
 
-<main class="body text">
+<nav class="navbar container_percents_60">
+    <div class="navbar__item navbar__item_logo"></div>
+
+    <div class="menu navbar__item navbar__item_menu">
+
+        <a class="menu__link menu__button menu-button_type_active" href="index.html">
+            Главная страница
+        </a>
+
+        <a class="menu__link menu__button menu-button_type_common" href="Activities.html">
+            Все активности
+        </a>
+
+        <a class="menu__link menu__button menu-button_type_common" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+           target="_/">
+            Не нажимать
+        </a>
+
+
+        <a class="menu__link menu__button menu-button_type_common" href="Meme.html">
+            ASCII графика
+        </a>
+
+        <a class="menu__link menu__button menu-button_type_disabled" href="#">
+                Будущие функции и страницы
+        </a>
+
+        <a class="menu__link menu__button menu-button_type_invisible" href="#">
+                Выключенные функции
+        </a>
+    </div>
+
+    <div class="theme navbar__item navbar__item_theme"></div>
+    <div class="search navbar__item navbar__item_search"></div>
+</nav>
+
+<main class="main-info text container_percents_70 margin-top_2em">
     <div class="text__quote"><q>Люди — интересные существа. В мире, полном чудес, им удалось придумать скуку...</q> -- <cite>Терри
         Пратчетт</cite></div>
 
@@ -233,6 +228,18 @@
     начать новый виток развития, найти единомышленников. <br>
 
     </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolor, dolorem eum facilis, fuga, laborum nihil odio officia optio quae quam quos reprehenderit saepe suscipit velit voluptas. Assumenda, nesciunt.</p>
 </main>
 <footer class="">
     <div class="">
