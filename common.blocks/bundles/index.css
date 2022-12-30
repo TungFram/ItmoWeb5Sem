@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 :root {
     --color-pink: #BDB3FD;
     --color-dark-grey: #A1AAE3;
@@ -86,12 +88,12 @@
     box-sizing: border-box;
 }
 
-.container_percents_60 {
+.container__percents_60 {
     width: 60%;
     margin: 0 auto;
 }
 
-.container_percents_70 {
+.container__percents_70 {
     width: 70%;
     margin: 0 auto;
 }
@@ -100,6 +102,7 @@
     display: flex;
     flex-flow: row wrap;
     place-content: center center;
+    z-index: 999;
 
     border: 2px solid rgba(40, 40, 40, 0.5);
     border-radius: 0.4em;
@@ -398,6 +401,240 @@
 
 
 
+
+
+.card-gallery {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    place-content: stretch space-between;
+    -webkit-justify-content: center;
+}
+
+.card-gallery__item {
+    margin: 1em 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 450px;
+
+    overflow: visible;
+
+    display: flex;
+    place-content: stretch space-between;
+    -webkit-justify-content: center;
+    flex-flow: row wrap;
+}
+
+.swiper__item {
+    margin: 0.1em 0.3em;
+    padding-bottom: 0.4em;
+}
+
+.card {
+    display: flex;
+
+    flex: 0.5 0.5 auto;
+    max-width: 300px;
+    overflow: hidden;
+
+    /*border: rgba(66, 66, 66, 1) 0.2em solid;*/
+    /*border-radius: 1.3em;*/
+
+
+    transition-property:        flex,     transform,    max-width,      filter,   margin-left,  margin-right;
+    transition-duration:        0.59s,    0.7s,         0.59s,          0.28s,    0.75s,        0.75s;
+    transition-timing-function: ease-in,  ease-in-out,  ease-in-out,    ease-in,  ease-in-out,  ease-in-out;
+    transition-delay:           0.8s,     0.8s,         0.8s,           0s,       1s,           1s;
+}
+
+.card:hover {
+    flex: 1 0.5 auto;
+    transform: scale(1.06);
+    max-width: 100%;
+    filter: brightness(110%) saturate(120%) contrast(90%);
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.swiper:hover > .card:not(:hover) {
+    filter: brightness(82%) saturate(88%) contrast(75%) grayscale(4%) blur(1.35px);
+}
+
+.card__thumb {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center flex-start;
+
+    position: relative;
+    overflow: hidden;
+
+    margin: 0;
+
+    top: 0%;
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(
+            farthest-side circle at center top,
+            rgba(255,   0,      0,      1) 0%,
+            rgba(255,   144,    0,      1) 20%,
+            rgba(229,   255,    0,      1) 40%,
+            rgba(0,     255,    0,      1) 60%,
+            rgba(0,     255,    128,    1) 80%,
+            rgba(0,     200,    255,    1) 100%
+    ) border-box;
+    border: 0.2em solid transparent;
+    border-radius: 1.3em;
+}
+
+.card__image{
+    position: absolute;
+    object-fit: cover;  /* Place image in center. */
+    width: 100%;        /* Place image in center. */
+    height: 100%;       /* Place image in center. */
+
+    transition-property:        transform;
+    transition-duration:        0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay:           0.4s;
+}
+
+.card__caption {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center flex-start;
+
+    position: absolute;
+    z-index: 1;
+
+    top: 75%;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+
+    transition-property:        transform;
+    transition-duration:        0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay:           0.4s;
+
+    border: rgba(240, 240, 240, 0.7) 0.2em solid;
+    border-radius: 1.3em;
+
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 0.6) 20%,
+            rgba(255, 255, 255, 0.7) 40%,
+            rgba(255, 255, 255, 0.7) 60%,
+            rgba(255, 255, 255, 0.6) 80%,
+            rgba(255, 255, 255, 0.3) 100%
+    );
+}
+
+.card__caption:hover {
+    transform: translateY(-50%);
+}
+
+.card__caption:hover ~ .card__image {
+    transform: scale(1.2) translateY(-5%);
+}
+
+.card__like {
+    position: absolute;
+    z-index: 1;
+    width: 1.3em;
+    padding: 1em 0 0 1em;
+
+    opacity: 0;
+    transition-property:        opacity;
+    transition-duration:        0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay:           0.9s;
+}
+
+.card__thumb:hover > .card__like {
+    opacity: 1;
+}
+
+.card-caption__title {
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+    padding: 0.4em 0;
+
+    font-size: 18pt;
+    font-weight: 900;
+    color: rgba(20, 20, 20, 0.9);
+    font-family: 'Roboto Slab', serif;
+
+
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 10%,
+            rgba(255, 255, 255, 0.7) 40%,
+            rgba(255, 255, 255, 0.7) 60%,
+            rgba(255, 255, 255, 0.3) 90%,
+            rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.card-caption__category {
+    font-size: 12pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(80, 80, 80, 1);
+    font-family: 'Raleway', sans-serif;
+    align-self: center;
+
+    padding: 0.5em 1.5em;
+    width: content-box;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+
+    background-image: radial-gradient(
+            farthest-side ellipse at center center,
+            rgba(255, 255, 255, 0.4) 0%,
+            rgba(255, 255, 255, 0.4) 90%,
+            rgba(0, 0, 0, 0) 100%
+    );
+}
+
+
+.card-caption__description {
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: 600;
+    font-max-size: 16pt;
+    font-min-size: 7pt;
+    line-height: 1.25em;
+    color: rgba(50, 50, 50, 1);
+
+    padding: 0.5em 0;
+
+    opacity: 0;
+    transition-property:        opacity;
+    transition-duration:        0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay:           0.9s;
+
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 10%,
+            rgba(255, 255, 255, 0.2) 40%,
+            rgba(255, 255, 255, 0.2) 60%,
+            rgba(255, 255, 255, 0.2) 90%,
+            rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.card__caption:hover > .card-caption__description {
+    opacity: 1;
+}
 
 
 
