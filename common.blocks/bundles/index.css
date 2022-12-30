@@ -404,6 +404,7 @@
 
 
 .card-gallery {
+    position: relative;
     width: 100%;
 
     display: flex;
@@ -414,13 +415,14 @@
 
 .card-gallery__item {
     margin: 1em 0;
+    padding: 1em 0;
 }
 
 .swiper {
     width: 100%;
     height: 450px;
 
-    overflow: visible;
+    overflow: hidden;
 
     display: flex;
     place-content: stretch space-between;
@@ -428,9 +430,42 @@
     flex-flow: row wrap;
 }
 
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+
+    transition-property:        filter;
+    transition-duration:        0.28s;
+    transition-timing-function: ease-in;
+    transition-delay:           0s;
+}
+
+.swiper-slide:hover {
+    filter: brightness(110%) saturate(120%) contrast(90%);
+}
+
+.swiper-wrapper:hover > .swiper-slide:not(:hover) {
+    filter: brightness(92%) saturate(98%) contrast(85%) blur(1px);
+}
+
 .swiper__item {
     margin: 0.1em 0.3em;
-    padding-bottom: 0.4em;
+    padding: 0.4em 0;
 }
 
 .card {
@@ -439,9 +474,6 @@
     flex: 0.5 0.5 auto;
     max-width: 300px;
     overflow: hidden;
-
-    /*border: rgba(66, 66, 66, 1) 0.2em solid;*/
-    /*border-radius: 1.3em;*/
 
 
     transition-property:        flex,     transform,    max-width,      filter,   margin-left,  margin-right;
