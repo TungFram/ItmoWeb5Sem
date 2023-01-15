@@ -30,7 +30,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
-<body class="body">
+<body class="body__theme_light">
 <header class="header">
     <script href="../Helping/outline-control.js" rel="script"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -41,7 +41,6 @@
 
         <div class="site-info__title">Ckyku.net</div>
 
-
         <div class="site-info__slogan">
             Место, где можно узнать чем можно заняться и отказаться от скуки и лени
         </div>
@@ -50,34 +49,38 @@
     <!--    <section class="header__item"></section>-->
 </header>
 
-<nav class="navbar container__percents_60">
+<nav class="navbar">
     <div class="navbar__item navbar__item_logo"></div>
 
     <div class="menu navbar__item navbar__item_menu">
 
-        <a class="menu__link menu__button menu-button_type_common" href="index.html">
+        <a class="menu__link menu__button menu-button__type_common" href="index.html">
             Главная страница
         </a>
 
-        <a class="menu__link menu__button menu-button_type_active" href="Activities.html">
+        <a class="menu__link menu__button menu-button__type_active" href="Activities.html">
             Все активности
         </a>
 
-        <a class="menu__link menu__button menu-button_type_common" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        <a class="menu__link menu__button menu-button__type_common" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
            target="_/">
             Не нажимать
         </a>
 
 
-        <a class="menu__link menu__button menu-button_type_common" href="Meme.html">
+        <a class="menu__link menu__button menu-button__type_common" href="Meme.html">
             ASCII графика
         </a>
 
-        <a class="menu__link menu__button menu-button_type_disabled" href="#">
+        <a class="menu__link menu__button menu-button__type_common" href="PhysicalExercises.html">
+            Программа тренировок
+        </a>
+
+        <a class="menu__link menu__button menu-button__type_disabled" href="#">
             Будущие функции и страницы
         </a>
 
-        <a class="menu__link menu__button menu-button_type_invisible" href="#">
+        <a class="menu__link menu__button menu-button__type_invisible" href="#">
             Выключенные функции
         </a>
     </div>
@@ -86,7 +89,7 @@
     <div class="search navbar__item navbar__item_search"></div>
 </nav>
 
-<main class="main-info text container__percents_70">
+<main class="main text text__color_black">
 
 
     <section class="card-gallery">
@@ -184,15 +187,15 @@
 
 
 
+        <!--Swiper-->
 
 
 
 
 
+        <section class="card-block card-gallery__item">
 
-        <section class="swiper card-gallery__item">
-
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
@@ -203,7 +206,7 @@
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
                         <div class="card-caption__category">Category</div>
-                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore eum illo maxime obcaecati repellat vel vero. Consequuntur fuga molestias natus quaerat voluptas. Ea expedita impedit magni velit! Soluta, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur aut autem corporis dolorem ea esse est fugiat illum impedit in itaque iusto laborum modi mollitia quibusdam, repellendus vero voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
                     </figcaption>
 
                     <img src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTgwNjA&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
@@ -212,7 +215,7 @@
             </article>
 
 
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
@@ -232,7 +235,7 @@
             </article>
 
 
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
@@ -252,7 +255,7 @@
             </article>
 
 
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
@@ -279,9 +282,9 @@
 
 
 
-        <section class="swiper card-gallery__item">
+        <section class="card-block card-gallery__item">
 
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
@@ -301,7 +304,7 @@
             </article>
 
 
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
@@ -321,7 +324,7 @@
             </article>
 
 
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
@@ -341,7 +344,7 @@
             </article>
 
 
-            <article class="card swiper__item">
+            <article class="card card-block__item">
                 <figure class="card__thumb">
 
                     <div class="card__share"></div>
