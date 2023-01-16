@@ -742,14 +742,34 @@
     border-radius: 1.3em;
 }
 
+.name-of-exercise {
+    background: rgba(50, 30, 20, 1);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
 .exercise {
     display: grid;
-    grid-column: 1 / -1;
     grid-template-columns: 3fr repeat(7, minmax(4em, 1fr)) 5em;
 
 
     border: 0.1em solid rgba(220, 220, 220, 1);
     border-radius: 1em;
+}
+
+.repeats:nth-child(odd) {
+    background: rgba(50, 50, 50, 1);
+    color: rgba(230, 230, 230, 1);
+}
+
+.repeats:nth-child(even) {
+    background: rgba(70, 70, 70, 1);
+    color: rgba(250, 250, 250, 1);
+}
+
+.repeats:nth-child(9) {
+    border-top-right-radius:    1em;
+    border-bottom-right-radius: 1em;
 }
 
 .exercise__item {
