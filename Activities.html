@@ -8,121 +8,440 @@
                                             Здесь вы можете найти занятие себе по душе и возможностям.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-          crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="Content/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Content/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Content/favicon-16x16.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
 
-    <!--    <link href="Helping/outline-prototype-label.css" rel="stylesheet">-->
+
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="common.blocks/bundles/index.css">
+
+<!--        <link href="../Helping/outline-prototype-label.css" rel="stylesheet">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
-<body>
-<header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-            crossorigin="anonymous"></script>
-    <script href="Helping/outline-control.js" rel="script"></script>
+<body class="body__theme_light">
+<header class="header">
+    <script href="../Helping/outline-control.js" rel="script"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+    <section class="site-info header__item">
+        <a class="site-info__logo" href="index.html"></a>
 
 
-    <article class="bg-secondary">
-        <section class="text-wrap text-center align-self-md-center">
-            <div class="row">
-                <div class="col text-start">
-                    <a href="index.html">
-                        <img class="shadow-none" width="110" src="Content/Logo.png" alt="Logo">
-                    </a>
-                </div>
+        <div class="site-info__title">Ckyku.net</div>
 
-                <div class="col text-center align-self-md-center">(beta version)</div>
+        <div class="site-info__slogan">
+            Место, где можно узнать чем можно заняться и отказаться от скуки и лени
+        </div>
+    </section>
 
-                <div class="col">
-                    <h1 class="text-center lh-1">Ckyku.net</h1>
-                </div>
-
-                <div class="col text-center align-self-md-center">(beta version)</div>
-
-                <div class="col-lg-3 align-self-md-center">
-                    <div class="lh-1 fs-5 fw-semibold text-end">Место, где можно узнать чем можно <br>заняться и
-                        отказаться от скуки и лени
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid container-xxl container-xl container-lg container-md container-sm">
-
-            <nav class="navbar navbar-expand navbar-dark bg-gradient shadow-sm">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                <button type="button" class="btn btn-outline-dark nav-item">
-                                    Главная страница
-                                </button>
-                            </a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"
-                               id="navbarDropdownMenuLink"
-                               role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <button type="button" class="btn bg-gradient nav-item active">
-                                    Активности <span class="sr-only"> <i>(Должно выкатываться)</i></span>
-                                </button>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item active" href="Activities.html">
-                                    Все активности
-                                </a>
-                                <a class="dropdown-item " href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                                   target="_/">
-                                    Не нажимать
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="Meme.html">
-                                    ASCII графика
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Будущие функции и страницы</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
-
-    </article>
+    <!--    <section class="header__item"></section>-->
 </header>
 
+<nav class="navbar">
+    <div class="navbar__item navbar__item_logo"></div>
+
+    <div class="menu navbar__item navbar__item_menu">
+
+        <a class="menu__link menu__button menu-button__type_common" href="index.html">
+            Главная страница
+        </a>
+
+        <a class="menu__link menu__button menu-button__type_active" href="Activities.html">
+            Все активности
+        </a>
+
+        <a class="menu__link menu__button menu-button__type_common" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+           target="_/">
+            Не нажимать
+        </a>
+
+
+        <a class="menu__link menu__button menu-button__type_common" href="Meme.html">
+            ASCII графика
+        </a>
+
+        <a class="menu__link menu__button menu-button__type_common" href="PhysicalExercises.html">
+            Программа тренировок
+        </a>
+
+        <a class="menu__link menu__button menu-button__type_disabled" href="#">
+            Будущие функции и страницы
+        </a>
+
+        <a class="menu__link menu__button menu-button__type_invisible" href="#">
+            Выключенные функции
+        </a>
+    </div>
+
+    <div class="theme navbar__item navbar__item_theme"></div>
+    <div class="search navbar__item navbar__item_search"></div>
+</nav>
+
+<main class="main text text__color_black">
+
+
+    <section class="card-gallery">
+
+        <div class="swiper mySwiper card-gallery__item">
+            <div class="swiper-wrapper">
+
+                <article class="swiper-slide swiper__item">
+                    <figure class="card__thumb">
+
+                        <div class="card__share"></div>
+                        <svg class="card__like" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <figcaption class="card__caption">
+                            <div class="card-caption__title">Title</div>
+                            <div class="card-caption__category">Category</div>
+                            <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                        </figcaption>
+
+                        <img src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTgwNjA&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                    </figure>
+                </article>
+
+
+                <article class="swiper-slide swiper__item">
+                    <figure class="card__thumb">
+
+                        <div class="card__share"></div>
+                        <svg class="card__like" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <figcaption class="card__caption">
+                            <div class="card-caption__title">Title</div>
+                            <div class="card-caption__category">Category</div>
+                            <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                        </figcaption>
+
+                        <img src="https://images.unsplash.com/photo-1617939533073-6c94c709370c?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTc4MDg&ixlib=rb-4.0.3&q=50" alt="" class="card__image"></img>
+
+                    </figure>
+                </article>
+
+
+                <article class="swiper-slide swiper__item">
+                    <figure class="card__thumb">
+
+                        <div class="card__share"></div>
+                        <svg class="card__like" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <figcaption class="card__caption">
+                            <div class="card-caption__title">Title</div>
+                            <div class="card-caption__category">Category</div>
+                            <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                        </figcaption>
+
+                        <img src="https://images.unsplash.com/photo-1613122707368-802083d1b602?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTc3NjU&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                    </figure>
+                </article>
+
+
+                <article class="swiper-slide swiper__item">
+                    <figure class="card__thumb">
+
+                        <div class="card__share"></div>
+                        <svg class="card__like" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <figcaption class="card__caption">
+                            <div class="card-caption__title">Title</div>
+                            <div class="card-caption__category">Category</div>
+                            <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                        </figcaption>
+
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTgwMzk&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                    </figure>
+                </article>
+
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+
+        <!--Swiper-->
+
+
+
+
+
+        <section class="card-block card-gallery__item">
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore eum illo maxime obcaecati repellat vel vero. Consequuntur fuga molestias natus quaerat voluptas. Ea expedita impedit magni velit! Soluta, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur aut autem corporis dolorem ea esse est fugiat illum impedit in itaque iusto laborum modi mollitia quibusdam, repellendus vero voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTgwNjA&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1617939533073-6c94c709370c?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTc4MDg&ixlib=rb-4.0.3&q=50" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1613122707368-802083d1b602?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTc3NjU&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTgwMzk&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+
+        </section>
+
+
+
+
+
+
+
+        <section class="card-block card-gallery__item">
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1528629297340-d1d466945dc5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTgwMjQ&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1418846531910-2b7bb1043512?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTg0NDk&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTg0NDk&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+
+
+            <article class="card card-block__item">
+                <figure class="card__thumb">
+
+                    <div class="card__share"></div>
+                    <svg class="card__like" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                    </svg>
+
+                    <figcaption class="card__caption">
+                        <div class="card-caption__title">Title</div>
+                        <div class="card-caption__category">Category</div>
+                        <p class="card-caption__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos dolorum ducimus eum ipsa odit optio ratione reprehenderit rerum! Amet animi atque eius esse nostrum, perferendis placeat quibusdam sequi voluptatem!</p>
+                    </figcaption>
+
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzIyMTg1MzQ&ixlib=rb-4.0.3&q=80" alt="" class="card__image"></img>
+
+                </figure>
+            </article>
+        </section>
+
+
+
+
+    </section>
+
+</main>
+
+<footer class="">
+    <div class="">
+        <h6>Источники:</h6>
+        <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BD%D1%8C"
+           class="">Лень и ее причины</a>
+        <a href=""
+           class=""></a>
+        <a href=""
+           class=""></a>
+        <a href=""
+           class=""></a>
+    </div>
+
+</footer>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        direction: "horizontal",
+        slidesPerView: 4,
+        spaceBetween: 0,
+        centeredSlides: true,
+        grabCursor: true,
+        freeMode: true,
+        loop: true,
+
+        mousewheel: {
+            enabled: true
+        },
+
+        keyboard: {
+            enabled: true
+        },
+
+        // autoplay: {
+        //     delay: 10000,
+        //     disableOnInteraction: false,
+        // },
+
+        hashNavigation: {
+            watchState: true,
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+
+        // scrollbar: {
+        //     el: ".swiper-scrollbar",
+        //     hide: true,
+        // },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
 </html>
