@@ -24,12 +24,11 @@
 
     <!--    <link href="../Helping/outline-prototype-label.css" rel="stylesheet">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
+    <script src="JavaScript/LoadTimeInfo.js"></script>
 </head>
-<body class="body__theme_dark">
+<body class=" body body__theme_dark">
 <header class="header">
     <script href="Helping/outline-control.js" rel="script"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
     <section class="site-info header__item">
         <a class="site-info__logo" href="index.html"></a>
@@ -49,35 +48,35 @@
 <nav class="navbar">
     <div class="navbar__item navbar__item_logo"></div>
 
-    <div class="menu navbar__item navbar__item_menu">
+    <div id="menu" class="menu navbar__item navbar__item_menu">
 
-        <a class="menu__link menu__button menu-button__type_common" href="index.html">
+        <a class="menu__link menu__button" href="index.html">
             Главная страница
         </a>
 
-        <a class="menu__link menu__button menu-button__type_common" href="Activities.html">
+        <a class="menu__link menu__button" href="Activities.html">
             Все активности
         </a>
 
-        <a class="menu__link menu__button menu-button__type_common" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        <a class="menu__link menu__button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
            target="_/">
             Не нажимать
         </a>
 
 
-        <a class="menu__link menu__button menu-button__type_common" href="Meme.html">
+        <a class="menu__link menu__button" href="Meme.html">
             ASCII графика
         </a>
 
-        <a class="menu__link menu__button menu-button__type_active" href="PhysicalExercises.html">
+        <a class="menu__link menu__button" href="PhysicalExercises.html">
             Программа тренировок
         </a>
 
-        <a class="menu__link menu__button menu-button__type_disabled" href="#">
+        <a class="menu__link menu__button" href="#">
             Будущие функции и страницы
         </a>
 
-        <a class="menu__link menu__button menu-button__type_invisible" href="#">
+        <a class="menu__link menu__button" href="###">
             Выключенные функции
         </a>
     </div>
@@ -396,18 +395,25 @@
 
 
 
-<footer class="">
-    <div class="">
-        <h6>Источники:</h6>
+<footer class="footer">
+    <div class="footer__item">
+        <div class="footer__item_title">Источники:</div>
         <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BD%D1%8C"
-           class="">Лень и ее причины</a>
-        <a href=""
-           class=""></a>
-        <a href=""
-           class=""></a>
-        <a href=""
-           class=""></a>
+           class="text__link">Лень и ее причины</a>
+<!--        <a href=""-->
+<!--           class=""></a>-->
+<!--        <a href=""-->
+<!--           class=""></a>-->
+<!--        <a href=""-->
+<!--           class=""></a>-->
     </div>
+
+    <div class="footer__item">
+        <div class="footer__item_title">Контакты:</div>
+        <a href="https://vk.com/tungfram" class="text__link">Автор сайта</a>
+    </div>
+
+    <div id="PageLoadingTime" class="footer__page-loading-time text__color_white text__alignment_center"></div>
 
 </footer>
 
@@ -417,5 +423,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+
+<script src="JavaScript/menu.js"></script>
+
 </body>
 </html>
