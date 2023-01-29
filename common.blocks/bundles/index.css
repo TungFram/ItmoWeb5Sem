@@ -116,10 +116,8 @@
     flex-flow: row wrap;
     place-content: center center;
     z-index: 999;
-
     width: 60%;
     margin: 0 auto;
-
     border: 2px solid rgba(40, 40, 40, 0.5);
     border-radius: 0.4em;
     background-color: var(--color-light-ghey);
@@ -132,7 +130,6 @@
     rgba(23, 115, 255, 0.1) 80%,
     rgba(23, 115, 255, 0.2) 100%
     );
-
     position: -webkit-sticky;
     position: sticky;
     min-height: 1em;
@@ -265,6 +262,14 @@
 
 .text__color_white {
     color: white;
+}
+
+.text__size_170pct {
+    font-size: 170%;
+}
+
+.text__size_150pct {
+    font-size: 200%;
 }
 
 .text_h_2 {
@@ -751,6 +756,10 @@
     opacity: 1;
 }
 
+
+
+
+
 .grid {
     display: grid;
     grid-template-rows: 2em repeat(auto-fit, minmax(5em, 1fr));
@@ -790,11 +799,27 @@
 
 .exercise {
     display: grid;
-    grid-template-columns: 3fr repeat(7, minmax(4em, 1fr)) 5em;
-
-
+    grid-template-columns: 3fr repeat(6, minmax(4em, 1fr));
     border: 0.1em solid rgba(220, 220, 220, 1);
     border-radius: 1em;
+
+    min-height: 6em;
+}
+
+.exercise__margin-top_5em {
+    margin-top: 5em;
+}
+
+.repeats {
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center center;
+    gap: 0.5em;
+
+    padding: 0.8em 0;
+
+    font-size: 130%;
+    /*border: 2px solid rgba(255, 255, 0, 1);*/
 }
 
 .repeats:nth-child(odd) {
@@ -805,16 +830,14 @@
 .repeats:nth-child(even) {
     background: rgba(70, 70, 70, 1);
     color: rgba(250, 250, 250, 1);
-}
 
-.repeats:nth-child(9) {
-    border-top-right-radius:    1em;
-    border-bottom-right-radius: 1em;
-}
-
-.exercise__item {
     border-left:    0.15em solid rgba(220, 220, 220, 1);
     border-right:   0.15em solid rgba(220, 220, 220, 1);
+}
+
+.repeats:nth-child(7) {
+    border-top-right-radius:    1em;
+    border-bottom-right-radius: 1em;
 }
 
 .name-of-exercise {
@@ -832,18 +855,6 @@
     text-overflow: ellipsis;
     text-align: center;
     line-height: 1.2;
-}
-
-.repeats {
-    display: grid;
-    grid-template-rows: auto;
-    place-items: center center;
-    gap: 0.5em;
-
-    padding: 0.8em 0;
-
-    font-size: 130%;
-    /*border: 2px solid rgba(255, 255, 0, 1);*/
 }
 
 
