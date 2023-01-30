@@ -28,53 +28,21 @@
 
 <!--        <link href="../Helping/outline-prototype-label.css" rel="stylesheet">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="JavaScript/Header.js"></script>
+    <script defer src="JavaScript/Navbar.js"></script>
+    <script defer src="JavaScript/SetMenuStyles.js"></script>
+    <script src="JavaScript/LoadTimeInfo.js"></script>
+    <script src="JavaScript/ActivityPagesGenerator.js"></script>
 
 </head>
 <body class="body__theme_light">
 
 <header id="header"></header>
 
-<nav class="navbar">
-    <div class="navbar__item navbar__item_logo"></div>
+<nav id="navbar"></nav>
 
-    <div class="menu navbar__item navbar__item_menu">
-
-        <a class="menu__link menu__button menu-button__type_common" href="index.html">
-            Главная страница
-        </a>
-
-        <a class="menu__link menu__button menu-button__type_active" href="Activities.html">
-            Все активности
-        </a>
-
-        <a class="menu__link menu__button menu-button__type_common" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-           target="_/">
-            Не нажимать
-        </a>
-
-
-        <a class="menu__link menu__button menu-button__type_common" href="Meme.html">
-            ASCII графика
-        </a>
-
-        <a class="menu__link menu__button menu-button__type_common" href="PhysicalExercises.html">
-            Программа тренировок
-        </a>
-
-        <a class="menu__link menu__button menu-button__type_disabled" href="#">
-            Будущие функции и страницы
-        </a>
-
-        <a class="menu__link menu__button menu-button__type_invisible" href="#">
-            Выключенные функции
-        </a>
-    </div>
-
-    <div class="theme navbar__item navbar__item_theme"></div>
-    <div class="search navbar__item navbar__item_search"></div>
-</nav>
-
-<main class="main text text__color_black">
+<div class="wrapper"></div>
+<main id="main" class="main text text__color_black">
 
 
     <section class="card-gallery">
@@ -86,7 +54,7 @@
                     <figure class="card__thumb">
 
                         <div class="card__share"></div>
-                        <svg class="card__like" viewBox="0 0 24 24">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
                             <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
                         </svg>
 
@@ -106,7 +74,7 @@
                     <figure class="card__thumb">
 
                         <div class="card__share"></div>
-                        <svg class="card__like" viewBox="0 0 24 24">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
                             <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
                         </svg>
 
@@ -126,7 +94,7 @@
                     <figure class="card__thumb">
 
                         <div class="card__share"></div>
-                        <svg class="card__like" viewBox="0 0 24 24">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
                             <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
                         </svg>
 
@@ -146,7 +114,7 @@
                     <figure class="card__thumb">
 
                         <div class="card__share"></div>
-                        <svg class="card__like" viewBox="0 0 24 24">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
                             <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
                         </svg>
 
@@ -183,10 +151,33 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        console.log('Был произведен переход к конкретной активности.');
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -203,10 +194,33 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        console.log('Был произведен переход к конкретной активности.');
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -223,10 +237,33 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        console.log('Был произведен переход к конкретной активности.');
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -243,10 +280,33 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        console.log('Был произведен переход к конкретной активности.');
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -272,10 +332,33 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        console.log('Был произведен переход к конкретной активности.');
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -292,10 +375,33 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        console.log('Был произведен переход к конкретной активности.');
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -312,10 +418,35 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        console.log('Был произведен переход к конкретной активности.');
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <input type="button">
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -332,10 +463,33 @@
             <article class="card card-block__item">
                 <figure class="card__thumb">
 
-                    <div class="card__share"></div>
-                    <svg class="card__like" viewBox="0 0 24 24">
-                        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-                    </svg>
+                    <div class="card__actions">
+                        <svg class="card__like card-like__padding" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                        </svg>
+
+                        <svg class="card__go2page card-go2page__padding" viewBox="0 0 50 50"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                             stroke-width="4.4799999999999995"
+                        onclick="
+                        const thumb = this.parentElement.parentElement;
+                        const image = thumb.lastElementChild.getAttribute('src');
+                        const caption       = thumb.lastElementChild.previousElementSibling;
+                        const title         = caption.firstElementChild.textContent;
+                        const category      = caption.firstElementChild.nextElementSibling.textContent;
+                        const description   = caption.lastElementChild.textContent;
+                        console.log('Был произведен переход к конкретной активности (' + title + ').');
+                        generatePageForThisActivity(image, title, category, description);
+                        ">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline points="16 16 32 32 16 48"></polyline>
+                                <polyline points="32 16 48 32 32 48"></polyline>
+                            </g>
+                        </svg>
+                    </div>
 
                     <figcaption class="card__caption">
                         <div class="card-caption__title">Title</div>
@@ -356,18 +510,20 @@
 
 </main>
 
-<footer class="">
-    <div class="">
-        <h6>Источники:</h6>
+<footer class="footer">
+    <div class="footer__item">
+        <div class="footer__item_title">Источники:</div>
         <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BD%D1%8C"
-           class="">Лень и ее причины</a>
-        <a href=""
-           class=""></a>
-        <a href=""
-           class=""></a>
-        <a href=""
-           class=""></a>
+           class="text__link">Лень и ее причины</a>
+
     </div>
+
+    <div class="footer__item">
+        <div class="footer__item_title">Контакты:</div>
+        <a href="https://vk.com/tungfram" class="text__link">Автор сайта</a>
+    </div>
+
+    <div id="PageLoadingTime" class="footer__page-loading-time text__color_white text__alignment_center"></div>
 
 </footer>
 
@@ -428,5 +584,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="JavaScript/Loading.js"></script>
 </body>
 </html>
